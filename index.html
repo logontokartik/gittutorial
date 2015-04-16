@@ -27,7 +27,7 @@
 <body>
     <div class="scrollblock block-title">
         <h1>git - the simple guide</h1>
-        <p>simple git guide to get started ;)</p>
+        <p>simple git guide ;)</p>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         <p class="meta">
             by <a href="http://www.twitter.com/KartikViswanadha">Kartik Viswanadha</a>
@@ -178,6 +178,28 @@
             If you instead want to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it like this<br />
             <code>git fetch origin</code><br />
             <code>git reset --hard origin/master</code>
+        </p>
+    </div>
+    <a name="excludes"></a>
+    <div class="scrollblock block-excludes">
+        <h2>exclusions and ignores</h2>
+       <p>
+            In case you want to exclude some files from git tracking you can do it in 2 ways.<br />
+            Using .gitignore file in your parent directory. 
+            There are tons of examples of gitignore files in the below Github Repo
+            <a href="https://github.com/github/gitignore">Github gitignore files</a>
+        </p>
+        <p>
+            Using exclude file, this is more of a global setting, which you can setup using git templates and whenever 
+            git init command is executed, the list of files in the exclude will be left out
+            <ol>
+                <li> Create a folder for git templates which you can access, </li>
+                <li> Within the folder create another folder info and add the exclude file. Link to <a href="https://dl.dropboxusercontent.com/u/74862951/exclude">Sample</a></li>
+                <li>Now run the following command 
+                <code>git config --global init.templatedir /path/to/templatedirectory</code><br />
+                Thats it, when you run git init anytime , the files you want to exclude will not be added to git.
+                </li>
+            </ol>
         </p>
     </div>
     <a name="hints"></a>
