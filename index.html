@@ -181,8 +181,8 @@
         </p>
     </div>
     <a name="excludes"></a>
-    <div class="scrollblock block-excludes">
-        <h2>exclusions and ignores</h2>
+    <div class="scrollblock block-resources">
+       <h2>exclusions and ignores</h2>
        <p>
             In case you want to exclude some files from git tracking you can do it in 2 ways.<br />
             Using .gitignore file in your parent directory. 
@@ -192,14 +192,14 @@
         <p>
             Using exclude file, this is more of a global setting, which you can setup using git templates and whenever 
             git init command is executed, the list of files in the exclude will be left out
-            <ol>
+            <ul>
                 <li> Create a folder for git templates which you can access, </li>
                 <li> Within the folder create another folder info and add the exclude file. Link to <a href="https://dl.dropboxusercontent.com/u/74862951/exclude">Sample</a></li>
                 <li>Now run the following command 
                 <code>git config --global init.templatedir /path/to/templatedirectory</code><br />
                 Thats it, when you run git init anytime , the files you want to exclude will not be added to git.
                 </li>
-            </ol>
+            </ul>
         </p>
     </div>
     <a name="hints"></a>
